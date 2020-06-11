@@ -1,0 +1,41 @@
+#accordion input {
+	display: none;
+}
+
+#accordion label {
+	cursor: pointer;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px; 
+	margin-left: -10px;
+	letter-spacing: .3em; 
+	font-size: large;
+	width: 100%;
+}
+
+#accordion label:hover {
+	background: #0c151f !important;
+}
+
+#accordion input:checked + label {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-bottom: 0;
+}
+#accordion article {
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+
+#accordion article p {
+	padding: 1em;
+}
+
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}

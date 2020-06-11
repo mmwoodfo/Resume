@@ -1,0 +1,89 @@
+/*----------- HTML TAG STYLES --------------*/
+html * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  width: 20%;
+}
+a {
+  color: #ff3e1b;
+}
+
+/*----------- OTHER STYLES ---------------*/
+.split {
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    width: 30%;
+    left: 0;
+    padding: 10px;
+    background-color: #152636 !important;
+    color: #f8f8f8;
+  }
+  
+  .right {
+    width: 60%;
+    right: 0;
+    padding: 10px;
+    color: #152636;
+  }
+  
+  .sections:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.sub-header-orange {
+    color: #ff3e1b; 
+    letter-spacing: .3em; 
+    font-weight: 600;
+}
+
+.btn-downloadPdf {
+  background-color:#ff3e1b;
+  border-radius:42px;
+  padding: 10px 5px 10px 5px;
+  color:#ffffff;
+  font-size:18px;
+  text-decoration:none;
+  text-align: center;
+  bottom: 50px;
+  float: right;
+  position: sticky;
+  box-shadow: 5px 10px rgba(136, 136, 136, 0.5);
+}
+
+.btn-downloadPdf:hover {
+  background-color:#7d230f;
+  box-shadow: 5px 10px rgba(54, 51, 51, 0.5);
+}
+
+/*-------- MOBILE STYLES ----------*/
+@media screen and (max-width: 1000px){
+  .split {
+      width: 100%;
+      position: unset;
+      padding-bottom: 50px;
+    }
+
+    body{
+      overflow-x: hidden;
+    }
+
+    .btn-downloadPdf {
+      position: unset;
+      width: 100%;
+    }
+}
