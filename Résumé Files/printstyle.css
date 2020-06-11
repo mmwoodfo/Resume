@@ -22,10 +22,6 @@
         display: inline-block;
     }
 
-    .print{
-        display: block;
-    } 
-
     ul{
         margin: 0px;
         padding: 3px, auto;
@@ -55,7 +51,7 @@
     }
 
     /*DISABLED CSS*/
-    .btn-downloadPdf, .btn-downloadPdf:hover, .noprint{
+    .btn-downloadPdf, .btn-downloadPdf:hover{
         display: none !important;
     }
 }
